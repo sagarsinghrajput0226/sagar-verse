@@ -11,11 +11,13 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Picture Placeholder */}
+          {/* Profile Picture */}
           <div className="w-40 h-40 mx-auto mb-8 rounded-full glass-effect border-4 border-primary/30 overflow-hidden animate-glow">
-            <div className="w-full h-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-white">
-              SS
-            </div>
+            <img 
+              src="https://i.postimg.cc/BQ9m3JK6/profile.jpg" 
+              alt="Sagar Singh"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
@@ -35,11 +37,20 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            <Button variant="hero" size="xl" className="group">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               View My Work
               <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
-            <Button variant="glass" size="xl">
+            <Button 
+              variant="glass" 
+              size="xl"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Contact Me
             </Button>
           </div>
@@ -47,7 +58,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 animate-fade-in" style={{ animationDelay: "0.8s" }}>
             <a
-              href="https://github.com/sagarsingh"
+              href="https://github.com/sagarsinghrajput0226"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110"
@@ -55,7 +66,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com/in/sagarsingh"
+              href="https://www.linkedin.com/in/sagar-singh-9b4587242/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass-effect rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110"

@@ -15,12 +15,14 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Profile Image Placeholder */}
+            {/* Profile Image */}
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-2xl glass-effect overflow-hidden border border-primary/20">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center text-6xl font-bold text-primary">
-                  SS
-                </div>
+                <img 
+                  src="https://i.postimg.cc/BQ9m3JK6/profile.jpg" 
+                  alt="Sagar Singh"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent/20 rounded-full blur-xl animate-pulse" style={{ animationDelay: "1s" }}></div>
@@ -64,7 +66,12 @@ const About = () => {
               </Card>
 
               {/* Download Resume Button */}
-              <Button variant="hero" size="lg" className="w-full sm:w-auto">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="w-full sm:w-auto"
+                onClick={() => window.open('https://github.com/sagarsinghrajput0226/Resume', '_blank')}
+              >
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume
               </Button>

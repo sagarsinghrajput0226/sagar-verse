@@ -103,13 +103,13 @@ const Experience = () => {
 
           {/* Timeline Visualization */}
           <div className="mt-16 relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-primary to-accent"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-32 w-px bg-gradient-to-b from-primary to-accent"></div>
             
-            <div className="space-y-12">
+            <div className="space-y-16">
               {/* Current Role */}
-              <div className="relative flex items-center justify-center">
-                <div className="w-4 h-4 bg-primary rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                <div className="bg-card border border-border/50 rounded-lg p-4 ml-8 max-w-md">
+              <div className="relative flex items-center">
+                <div className="w-4 h-4 bg-primary rounded-full absolute left-1/2 transform -translate-x-1/2 z-10"></div>
+                <div className="bg-card border border-border/50 rounded-lg p-4 ml-12 max-w-md">
                   <div className="text-sm text-primary font-medium">Present</div>
                   <div className="font-semibold">Corporate Co-Lead at E-Cell</div>
                   <div className="text-sm text-muted-foreground">Continuing leadership and growth</div>
@@ -117,9 +117,9 @@ const Experience = () => {
               </div>
 
               {/* Start Date */}
-              <div className="relative flex items-center justify-center">
-                <div className="w-4 h-4 bg-accent rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-                <div className="bg-card border border-border/50 rounded-lg p-4 mr-8 max-w-md">
+              <div className="relative flex items-center justify-end">
+                <div className="w-4 h-4 bg-accent rounded-full absolute left-1/2 transform -translate-x-1/2 z-10"></div>
+                <div className="bg-card border border-border/50 rounded-lg p-4 mr-12 max-w-md">
                   <div className="text-sm text-accent font-medium">Dec 2023</div>
                   <div className="font-semibold">Started as Corporate Co-Lead</div>
                   <div className="text-sm text-muted-foreground">Beginning of leadership journey</div>

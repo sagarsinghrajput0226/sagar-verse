@@ -8,8 +8,8 @@ const Projects = () => {
       title: "E-Commerce Backend",
       description: "Comprehensive backend system with Java, Spring Boot, MySQL, and Spring Security. Features full CRUD operations, category search functionality, and optimized performance for high-traffic applications.",
       technologies: ["Java", "Spring Boot", "MySQL", "Spring Security", "REST APIs"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/sagarsinghrajput0226/E-Com",
+      image: "https://i.postimg.cc/G2mZkdQr/Screenshot-2025-07-26-164910.png",
       icon: Server,
       gradient: "from-blue-500 to-purple-500"
     },
@@ -17,8 +17,8 @@ const Projects = () => {
       title: "TuneStream",
       description: "Intelligent music recommendation system built with Django and Scikit-learn. Uses cosine similarity algorithms to provide personalized music suggestions based on user preferences and listening history.",
       technologies: ["Django", "Python", "Scikit-learn", "MongoDB", "Machine Learning"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/sagarsinghrajput0226/TuneStream",
+      image: "https://i.postimg.cc/G2mZkdQr/Screenshot-2025-07-26-164910.png",
       icon: Database,
       gradient: "from-green-500 to-teal-500"
     },
@@ -26,8 +26,8 @@ const Projects = () => {
       title: "Movie Watchlist",
       description: "Full-featured CRUD application with Spring Boot and MySQL integration. Includes live movie ratings via OMDB API, user authentication, and personalized watchlist management.",
       technologies: ["Spring Boot", "MySQL", "OMDB API", "REST APIs", "Java"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/sagarsinghrajput0226/watchlistApplication",
+      image: "https://i.postimg.cc/Y9mQDyMV/Screenshot-2025-07-26-165743.png",
       icon: Globe,
       gradient: "from-orange-500 to-red-500"
     }
@@ -81,13 +81,14 @@ const Projects = () => {
 
                     {/* Action Buttons */}
                     <div className="flex space-x-4">
-                      <Button variant="hero" size="sm" className="group">
+                      <Button 
+                        variant="hero" 
+                        size="sm" 
+                        className="group"
+                        onClick={() => window.open(project.github, '_blank')}
+                      >
                         <Github className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                         View Code
-                      </Button>
-                      <Button variant="glass" size="sm" className="group">
-                        <ExternalLink className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                        Live Demo
                       </Button>
                     </div>
                   </div>
@@ -95,21 +96,16 @@ const Projects = () => {
                   {/* Project Visual */}
                   <div className={`relative ${index % 2 === 1 ? 'md:col-start-1' : ''}`}>
                     <div className="relative overflow-hidden rounded-lg glass-effect border border-border/50 aspect-video">
-                      <div className={`w-full h-full bg-gradient-to-br ${project.gradient} opacity-20 flex items-center justify-center`}>
-                        <project.icon className="w-16 h-16 text-white/60" />
-                      </div>
+                      <img 
+                        src={project.image} 
+                        alt={`${project.title} screenshot`}
+                        className="w-full h-full object-cover"
+                      />
                       
                       {/* Floating Elements */}
                       <div className="absolute top-4 left-4 w-3 h-3 bg-red-500 rounded-full"></div>
                       <div className="absolute top-4 left-10 w-3 h-3 bg-yellow-500 rounded-full"></div>
                       <div className="absolute top-4 left-16 w-3 h-3 bg-green-500 rounded-full"></div>
-                      
-                      {/* Code Lines Simulation */}
-                      <div className="absolute bottom-4 left-4 right-4 space-y-2">
-                        <div className="h-2 bg-white/20 rounded"></div>
-                        <div className="h-2 bg-white/15 rounded w-3/4"></div>
-                        <div className="h-2 bg-white/10 rounded w-1/2"></div>
-                      </div>
                     </div>
 
                     {/* Glow Effect */}
@@ -122,7 +118,11 @@ const Projects = () => {
 
           {/* View More Projects */}
           <div className="text-center mt-12">
-            <Button variant="glass" size="lg">
+            <Button 
+              variant="glass" 
+              size="lg"
+              onClick={() => window.open('https://github.com/sagarsinghrajput0226?tab=repositories', '_blank')}
+            >
               <Github className="w-5 h-5 mr-2" />
               View All Projects on GitHub
             </Button>

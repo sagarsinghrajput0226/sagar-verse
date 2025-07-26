@@ -65,13 +65,13 @@ const Contact = () => {
     {
       icon: Github,
       title: "GitHub",
-      href: "https://github.com/sagarsingh",
+      href: "https://github.com/sagarsinghrajput0226",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
-      href: "https://linkedin.com/in/sagarsingh",
+      href: "https://www.linkedin.com/in/sagar-singh-9b4587242/",
       color: "hover:text-blue-400"
     },
     {

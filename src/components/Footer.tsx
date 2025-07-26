@@ -20,12 +20,12 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/sagarsingh",
+      href: "https://github.com/sagarsinghrajput0226",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/sagarsingh",
+      href: "https://www.linkedin.com/in/sagar-singh-9b4587242/",
       label: "LinkedIn"
     },
     {
@@ -74,6 +74,12 @@ const Footer = () => {
                     key={link.name}
                     href={link.href}
                     className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm"
+                    onClick={(e) => {
+                      if (link.name === "Home") {
+                        e.preventDefault();
+                        document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
                   >
                     {link.name}
                   </a>
