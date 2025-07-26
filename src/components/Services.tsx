@@ -115,7 +115,7 @@ const Services = () => {
                 <div 
                   className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"
                   style={{ 
-                    background: `linear-gradient(135deg, ${service.gradient.split(' ')[0].replace('from-', '')}, ${service.gradient.split(' ')[2].replace('to-', '')})`
+                    background: `linear-gradient(135deg, ${service.gradient.split(' ')[0].replace('from-', '')}, ${service.gradient.split(' ')[1].replace('to-', '')})`
                   }}
                 ></div>
               </Card>

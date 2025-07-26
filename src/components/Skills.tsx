@@ -92,9 +92,12 @@ const Skills = () => {
                 </div>
 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-r opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"
-                     style={{ background: `linear-gradient(45deg, ${category.color.split(' ')[0].replace('from-', '')}, ${category.color.split(' ')[2].replace('to-', '')})` }}>
-                </div>
+                <div 
+                  className="absolute inset-0 rounded-lg bg-gradient-to-r opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"
+                  style={{ 
+                    background: `linear-gradient(45deg, ${category.color.split(' ')[0].replace('from-', '')}, ${category.color.split(' ')[1].replace('to-', '')})`
+                  }}
+                ></div>
               </Card>
             ))}
           </div>
