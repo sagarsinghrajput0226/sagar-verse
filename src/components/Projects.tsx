@@ -9,7 +9,7 @@ const Projects = () => {
       description: "Comprehensive backend system with Java, Spring Boot, MySQL, and Spring Security. Features full CRUD operations, category search functionality, and optimized performance for high-traffic applications.",
       technologies: ["Java", "Spring Boot", "MySQL", "Spring Security", "REST APIs"],
       github: "https://github.com/sagarsinghrajput0226/E-Com",
-      image: "https://i.postimg.cc/G2mZkdQr/Screenshot-2025-07-26-164910.png",
+      image: "https://i.postimg.cc/htHjyZYH/Screenshot-2025-07-26-164600.png",
       icon: Server,
       gradient: "from-blue-500 to-purple-500"
     },
