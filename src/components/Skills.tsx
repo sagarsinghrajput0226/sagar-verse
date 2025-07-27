@@ -37,7 +37,7 @@ const Skills = () => {
     {
       title: "Mobile Development",
       icon: Smartphone,
-      skills: ["Android", "Kotlin", "Flutter"],
+      skills: ["Android", "Kotlin"],
       color: "from-purple-500 to-pink-500"
     },
     {
