@@ -45,7 +45,11 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <Button variant="hero" size="sm">
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => window.open('https://github.com/sagarsinghrajput0226/Resume/blob/main/Resume_Sagar_Singh.pdf', '_blank')}
+            >
               Download Resume
             </Button>
           </div>
@@ -74,7 +78,12 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="hero" size="sm" className="w-full mt-4">
+            <Button 
+              variant="hero" 
+              size="sm" 
+              className="w-full mt-4"
+              onClick={() => window.open('https://github.com/sagarsinghrajput0226/Resume/blob/main/Resume_Sagar_Singh.pdf', '_blank')}
+            >
               Download Resume
             </Button>
           </div>

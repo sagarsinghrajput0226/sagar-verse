@@ -31,7 +31,7 @@ const About = () => {
             {/* About Content */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Aspiring Backend and Full-Stack Developer with a strong foundation in{" "}
+                Aspiring Backend and Data Science enthusiast with a strong foundation in{" "}
                 <span className="text-primary font-semibold">Java</span>,{" "}
                 <span className="text-primary font-semibold">Spring Boot</span>, and{" "}
                 <span className="text-primary font-semibold">RESTful APIs</span>.
@@ -70,7 +70,7 @@ const About = () => {
                 variant="hero" 
                 size="lg" 
                 className="w-full sm:w-auto"
-                onClick={() => window.open('https://github.com/sagarsinghrajput0226/Resume', '_blank')}
+                onClick={() => window.open('https://github.com/sagarsinghrajput0226/Resume/blob/main/Resume_Sagar_Singh.pdf', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume

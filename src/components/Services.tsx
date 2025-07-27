@@ -22,7 +22,7 @@ const Services = () => {
       title: "Web Application Development",
       description: "Creating modern, responsive web applications with React and full-stack technologies. Focus on user experience, performance optimization, and cross-browser compatibility.",
       icon: Globe,
-      technologies: ["React", "JavaScript", "HTML/CSS", "Responsive Design"],
+      technologies: ["JavaScript", "HTML/CSS", "Responsive Design"],
       gradient: "from-green-500 to-teal-500"
     },
     {
@@ -130,10 +130,18 @@ const Services = () => {
                 Let's collaborate and bring your ideas to life with modern, scalable solutions
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="hero" size="lg">
+                <Button 
+                  variant="hero" 
+                  size="lg"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   Get In Touch
                 </Button>
-                <Button variant="glass" size="lg">
+                <Button 
+                  variant="glass" 
+                  size="lg"
+                  onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                >
                   View Portfolio
                 </Button>
               </div>

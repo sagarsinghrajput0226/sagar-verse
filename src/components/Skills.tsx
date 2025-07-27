@@ -13,13 +13,13 @@ const Skills = () => {
     {
       title: "Languages",
       icon: Code,
-      skills: ["Java", "Python", "Kotlin", "C++", "JavaScript", "SQL", "NoSQL"],
+      skills: ["Java", "Python", "Kotlin", "JavaScript", "SQL", "NoSQL"],
       color: "from-blue-500 to-purple-500"
     },
     {
       title: "Frameworks & Tools",
       icon: Server,
-      skills: ["Spring Boot", "ReactJS", "Django", "MongoDB", "Postman"],
+      skills: ["Spring Boot", "Django", "MongoDB", "Postman"],
       color: "from-green-500 to-teal-500"
     },
     {
@@ -31,13 +31,13 @@ const Skills = () => {
     {
       title: "Web Development",
       icon: Globe,
-      skills: ["HTML", "CSS", "JavaScript", "React", "Responsive Design"],
+      skills: ["HTML", "CSS", "JavaScript", "Responsive Design"],
       color: "from-cyan-500 to-blue-500"
     },
     {
       title: "Mobile Development",
       icon: Smartphone,
-      skills: ["Android", "Kotlin", "Flutter", "React Native"],
+      skills: ["Android", "Kotlin", "Flutter"],
       color: "from-purple-500 to-pink-500"
     },
     {
@@ -106,7 +106,7 @@ const Skills = () => {
           <div className="mt-16 text-center">
             <h3 className="text-2xl font-semibold mb-6">Currently Learning</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {["Docker", "Kubernetes", "AWS", "TensorFlow", "React Native"].map((tech) => (
+              {["Docker", "Kubernetes", "AWS", "TensorFlow"].map((tech) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-accent/20 text-accent rounded-full border border-accent/30 animate-pulse"
