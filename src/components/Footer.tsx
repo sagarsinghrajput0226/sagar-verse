@@ -57,7 +57,7 @@ const Footer = () => {
                 Sagar Singh
               </h3>
               <p className="text-muted-foreground">
-                Backend Developer | Full Stack Enthusiast | Tech Explorer
+                Backend Developer | Data Science Enthusiast | Tech Explorer
               </p>
               <p className="text-sm text-muted-foreground">
                 Building scalable solutions and exploring new technologies.
