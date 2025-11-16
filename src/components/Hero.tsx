@@ -14,7 +14,7 @@ const Hero = () => {
           {/* Profile Picture */}
           <div className="w-40 h-40 mx-auto mb-8 rounded-full glass-effect border-4 border-primary/30 overflow-hidden animate-glow">
             <img 
-              src="https://i.postimg.cc/BQ9m3JK6/profile.jpg" 
+              src="https://i.postimg.cc/W3mytY89/profile-ssr2.jpg" 
               alt="Sagar Singh"
               className="w-full h-full object-cover"
             />

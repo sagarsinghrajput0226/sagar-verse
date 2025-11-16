@@ -19,7 +19,7 @@ const About = () => {
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-2xl glass-effect overflow-hidden border border-primary/20">
                 <img 
-                  src="https://i.postimg.cc/BQ9m3JK6/profile.jpg" 
+                  src="https://i.postimg.cc/W3mytY89/profile-ssr2.jpg" 
                   alt="Sagar Singh"
                   className="w-full h-full object-cover"
                 />
